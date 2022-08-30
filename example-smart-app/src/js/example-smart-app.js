@@ -17,7 +17,8 @@
                       code: {
                         $or: ['http://loinc.org|8302-2', 'http://loinc.org|8462-4',
                               'http://loinc.org|8480-6', 'http://loinc.org|2085-9',
-                              'http://loinc.org|2089-1', 'http://loinc.org|85354-9']
+                              'http://loinc.org|2089-1', 'http://loinc.org|85354-9',
+                              'http://loinc.org|8310-5' ]
                       }
                     }
                   });
@@ -60,6 +61,7 @@
 
           p.hdl = getQuantityValueAndUnit(hdl[0]);
           p.ldl = getQuantityValueAndUnit(ldl[0]);
+          p.temperature = getQuantityValueAndUnit(temperaturel[0]);
 
           ret.resolve(p);
         });
