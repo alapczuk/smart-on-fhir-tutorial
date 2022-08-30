@@ -30,7 +30,6 @@
 
           var fname = '';
           var lname = '';
-          var temperature = '';
 
           if (typeof patient.name[0] !== 'undefined') {
             fname = patient.name[0].given.join(' ');
